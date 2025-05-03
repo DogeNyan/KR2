@@ -1,9 +1,5 @@
 package main
-
-import (
-	"fmt"
-)
-
+import "fmt"
 func multiply(a, b int) {
 	fmt.Println("Результат:", a*b)
 }
@@ -13,7 +9,13 @@ func div(a, b int) {
 	} else {
 		fmt.Println("Result:", a/b)
 	}
+func add(a, b int) {
+	fmt.Println("Результат:", a+b)
 }
+func sub(a, b int) {
+	fmt.Println("Результат", a-b)
+}
+
 func main() {
 
 }
