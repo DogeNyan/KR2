@@ -15,7 +15,13 @@ func div(a, b int) {
 	} else {
 		fmt.Println("Result:", a/b)
 	}
+func add(a, b int) {
+	fmt.Println("Результат:", a+b)
 }
+func sub(a, b int) {
+	fmt.Println("Результат", a-b)
+}
+
 func main() {
 	cmd := os.Args[1]
 	a, _ := strconv.Atoi(os.Args[2])
