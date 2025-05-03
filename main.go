@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"strconv"
 )
 
 func multiply(a, b int) {
@@ -15,5 +17,19 @@ func div(a, b int) {
 	}
 }
 func main() {
+	cmd := os.Args[1]
+	a, _ := strconv.Atoi(os.Args[2])
+	b, _ := strconv.Atoi(os.Args[3])
 
+	if cmd == "add" {
+		add(a, b)
+	} else if cmd == "sub" {
+		sub(a, b)
+	} else if cmd == "mul" {
+		mul(a, b)
+	} else if cmd == "div" {
+		div(a, b)
+	} else {
+		fmt.Println("Error")
+	}
 }
